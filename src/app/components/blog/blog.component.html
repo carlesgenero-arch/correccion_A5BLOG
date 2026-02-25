@@ -27,18 +27,19 @@
     <section>
         <!-- inicio lista noticias-->
          <div class="noticias">
+            @for (noticia of misNoticias(); track noticia){
             <article>
                 <figure>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnDrBPgDyqt1BxXJ0vWqC0ZPPoSPt67B_I6YXIXv8c-r00HT7kTITeTsyRtAr4z0hhOg3s5FCsAb38GcyKQosHVCi-VHwr0DbShdGt1PIr&s=10" alt="perrito">
+                    <img [src]="noticia.imagen" [alt]="noticia.titulo">
                 </figure>
-                <h3>Titulo de la noticia</h3>
-                <p>TExto de la noticia</p>
+                <h3>{{noticia.titulo}}</h3>
+                <p [innerHTML]="noticia.texto"></p>
                 <div>
-                    <p>Autor</p>
-                    <p>fecha: </p>
+                    
+                    <small>fecha: {{noticia.fecha | date: "d/M/Y"}} </small>
                 </div>
             </article>
-            
+            }
          </div>
 
         <!-- final lista noticias-->

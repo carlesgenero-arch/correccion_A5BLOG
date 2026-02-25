@@ -5,7 +5,9 @@ input, textarea{
     padding: 5px;
 }
 
-
+small{
+    color: tomato;
+}
 
 button{
     background-color: black;

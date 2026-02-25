@@ -4,7 +4,7 @@ export const NOTICIAS: INew[] = [
   {
     titulo: 'Angular 19 lanzado con nuevas características',
     imagen: 'https://www.google.com/imgres?q=imagen%20angular%20300x200&imgurl=https%3A%2F%2Fwww.dzoom.org.es%2Fwp-content%2Fuploads%2F2022%2F04%2Flentes-ojo-de-pez-fisheye-retrato-paisaje-urbano-portada-300x200.jpg&imgrefurl=https%3A%2F%2Fwww.dzoom.org.es%2Ftag%2Fangular%2F&docid=Yaf7KWI96mgT2M&tbnid=j84SKPM3hmnpuM&vet=12ahUKEwjTouSO0vSSAxW5VKQEHSe6BVwQnPAOegQIIRAB..i&w=300&h=200&hcb=2&itg=1&ved=2ahUKEwjTouSO0vSSAxW5VKQEHSe6BVwQnPAOegQIIRAB',
-    texto: 'Se ha lanzado la última versión de Angular con mejoras significativas en el rendimiento y nuevas características de señales.',
+    texto: 'Se ha lanzado la <strong> última versión de Angular </strong> con mejoras significativas en el rendimiento y nuevas características de señales.',
     fecha: '2024-12-20'
   },
   {
