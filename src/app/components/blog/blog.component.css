@@ -1,66 +1,6 @@
-/*Inicio Form*/
-
-input, textarea{
-    width: 100%;
-    padding: 5px;
-}
-
-small{
-    color: tomato;
-}
-
-button{
-    background-color: black;
-    border: 0;
-    border-radius: 10px;
-    color: white;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-/*Final Form*/
-
-/*Inicio noticias*/
 
 .flex section:first-child{
     padding: 20px;
     border-bottom: 1px solid lightgray;
 
-}
-
-.noticias{
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    article{
-        width: calc(33.333% - 10px);
-    }
-
-}
-
-
-/*Final noticias*/
-
-/*media*/
-
-
-@media (max-width: 768px){
-    .noticias{
-    
-    article{
-        width: calc(50% - 10px);
-    }
-
-}
-}
-
-@media (max-width: 425px){
-    .noticias{
-    
-    article{
-        width: calc(100% - 10px);
-    }
-
-}
 }

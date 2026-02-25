@@ -1,0 +1,40 @@
+/*Inicio noticias*/
+
+
+
+.noticias{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    article{
+        width: calc(33.333% - 10px);
+    }
+
+}
+
+
+/*Final noticias*/
+
+/*media*/
+
+
+@media (max-width: 768px){
+    .noticias{
+    
+    article{
+        width: calc(50% - 10px);
+    }
+
+}
+}
+
+@media (max-width: 425px){
+    .noticias{
+    
+    article{
+        width: calc(100% - 10px);
+    }
+
+}
+}

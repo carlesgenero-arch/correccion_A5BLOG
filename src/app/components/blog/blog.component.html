@@ -1,24 +1,8 @@
 <div class="flex">
     <section>
         <!-- inicio formulario-->
-        <div>
-            <label for="titulo">Titulo</label>
-            <input type="text" id="titulo" [(ngModel)]="nuevaNoticia.titulo">
-        </div>
-         <div>
-            <label for="imagen">Imagen</label>
-            <input type="text" id="imagen" [(ngModel)]="nuevaNoticia.imagen">
-        </div>
-         <div>
-            <label for="texto">Texto noticia</label>
-            <textarea id="texto" [(ngModel)]="nuevaNoticia.texto"></textarea>
-        </div>
-         <div>
-            <label for="fecha">Fecha</label>
-            <input type="date" id="fecha" [(ngModel)]="nuevaNoticia.fecha">
-        </div>
-        <button (click)="getDataForm()">Guardar noticia</button>
-
+       
+        <app-form></app-form>
 
 
         <!-- final formulario-->
@@ -26,21 +10,7 @@
     </section>
     <section>
         <!-- inicio lista noticias-->
-         <div class="noticias">
-            @for (noticia of misNoticias(); track noticia){
-            <article>
-                <figure>
-                    <img [src]="noticia.imagen" [alt]="noticia.titulo">
-                </figure>
-                <h3>{{noticia.titulo}}</h3>
-                <p [innerHTML]="noticia.texto"></p>
-                <div>
-                    
-                    <small>fecha: {{noticia.fecha | date: "d/M/Y"}} </small>
-                </div>
-            </article>
-            }
-         </div>
+        <app-news-list></app-news-list>
 
         <!-- final lista noticias-->
 

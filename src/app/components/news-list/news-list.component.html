@@ -1,0 +1,15 @@
+ <div class="noticias">
+            @for (noticia of misNoticias(); track noticia){
+            <article>
+                <figure>
+                    <img [src]="noticia.imagen" [alt]="noticia.titulo">
+                </figure>
+                <h3>{{noticia.titulo}}</h3>
+                <p [innerHTML]="noticia.texto"></p>
+                <div>
+                    
+                    <small>fecha: {{noticia.fecha}} </small>
+                </div>
+            </article>
+            }
+         </div>
