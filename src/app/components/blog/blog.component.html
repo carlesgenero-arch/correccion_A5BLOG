@@ -3,21 +3,21 @@
         <!-- inicio formulario-->
         <div>
             <label for="titulo">Titulo</label>
-            <input type="text" id="titulo">
+            <input type="text" id="titulo" [(ngModel)]="nuevaNoticia.titulo">
         </div>
          <div>
             <label for="imagen">Imagen</label>
-            <input type="text" id="imagen">
+            <input type="text" id="imagen" [(ngModel)]="nuevaNoticia.imagen">
         </div>
          <div>
             <label for="texto">Texto noticia</label>
-            <textarea name="" id="texto"></textarea>
+            <textarea id="texto" [(ngModel)]="nuevaNoticia.texto"></textarea>
         </div>
          <div>
             <label for="fecha">Fecha</label>
-            <input type="date" id="fecha">
+            <input type="date" id="fecha" [(ngModel)]="nuevaNoticia.fecha">
         </div>
-        <button>Guardar noticia</button>
+        <button (click)="getDataForm()">Guardar noticia</button>
 
 
 
