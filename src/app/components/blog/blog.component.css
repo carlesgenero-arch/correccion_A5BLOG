@@ -32,7 +32,7 @@ button{
     flex-wrap: wrap;
     gap: 10px;
     article{
-        width: calc(33.333%-10px);
+        width: calc(33.333% - 10px);
     }
 
 }
@@ -47,7 +47,7 @@ button{
     .noticias{
     
     article{
-        width: calc(50%-10px);
+        width: calc(50% - 10px);
     }
 
 }
@@ -57,7 +57,7 @@ button{
     .noticias{
     
     article{
-        width: calc(100%-10px);
+        width: calc(100% - 10px);
     }
 
 }
