@@ -1,30 +1,18 @@
-import { Component, signal } from '@angular/core';
-import { INew } from '../../interfaces/inew.interface';
-import { NOTICIAS } from '../../db/noticias.db';
-import { DatePipe } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { Component, inject, signal } from '@angular/core';
+import { FormComponent } from '../form/form.component';
+import { NewsListComponent } from '../news-list/news-list.component';
+
+
 
 
 @Component({
   selector: 'app-blog',
-  imports: [DatePipe,FormsModule],
+  imports: [FormComponent, NewsListComponent],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css',
 })
 export class BlogComponent {
+ 
 
-  misNoticias = signal<INew[]>(NOTICIAS)
-  nuevaNoticia: INew = {titulo:"", texto:"", imagen: "", fecha:""}
-
-  getDataForm(){
-    if(this.nuevaNoticia.titulo != "" && this.nuevaNoticia.texto !="" && this.nuevaNoticia.fecha !="" && this.nuevaNoticia.imagen !=""){
-      this.misNoticias.update((noticias)=>[...noticias,this.nuevaNoticia])
-      this.nuevaNoticia = {titulo:"", texto:"", imagen: "", fecha:""}
-
-    }else{
-      alert ('Los campos no pueden estar vacios')
-    }
-
-  }
 
 }

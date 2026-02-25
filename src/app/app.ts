@@ -8,5 +8,4 @@ import { BlogComponent } from "./components/blog/blog.component";
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('correccion_A5');
 }
